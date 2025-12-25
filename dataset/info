@@ -1,22 +1,10 @@
-## Dataset Information
+## Raw Dataset Files
 
-This project uses the **Brazilian E-Commerce Public Dataset by Olist**, available on Kaggle.
+These CSV files are part of the Brazilian Olist public dataset.
 
-### Dataset Source
-- Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+They are provided here for:
+- Schema understanding
+- Reproducibility of SQL analysis
+- Portfolio demonstration purposes
 
-### Dataset Description
-The dataset contains real commercial data from Olist, including:
-- Orders and order status
-- Customers and customer locations
-- Products and product categories
-- Sellers
-- Payments and payment methods
-- Freight and delivery timelines
-
-### Data Usage in This Project
-- Only **delivered orders** were used for analysis to ensure business accuracy.
-- Raw CSV files were imported into **MySQL** for data cleaning and transformation.
-- A consolidated analytical table (`sales_master`) was created using SQL joins.
-- Final insights were visualized using **Power BI**.
-
+All analytical results are derived after data cleaning and transformation in SQL.
