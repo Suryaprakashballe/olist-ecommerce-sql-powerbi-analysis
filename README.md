@@ -84,7 +84,7 @@ This interactive Power BI dashboard provides a consolidated view of:
 - Seller performance and revenue concentration  
 - Payment method preferences  
 
-![Olist E-commerce Dashboard](Dashboard.png)
+![Olist E-commerce Dashboard](powerbi/Dashboard.png)
 
 ---
 
