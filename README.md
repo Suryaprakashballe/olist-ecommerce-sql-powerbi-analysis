@@ -111,5 +111,3 @@ A single well-designed dashboard is sufficient to track KPIs, trends, and busine
 health, enabling informed strategic decisions.
 
 ---
-
-## 📁 Repository Structure
