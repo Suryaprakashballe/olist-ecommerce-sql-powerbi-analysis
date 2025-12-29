@@ -2,20 +2,6 @@
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-## 📌 Table of Contents
-## Problem Statement
-## Dataset
-## Tools & Technologies
-## Approach
-## Business Questions Answered
-## Key Insights
-## Dashboard Preview
-## Business Recommendations
-## Solution / Outcome
-## Conclusion
-## Repository Structure
-
-
 # 📦 Olist E-Commerce Performance Analysis  
 ### SQL & Power BI Business Intelligence Project
 
