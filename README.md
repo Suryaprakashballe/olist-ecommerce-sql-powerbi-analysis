@@ -13,7 +13,6 @@
 8. [Business Recommendations](#business-recommendations)
 9. [Solution / Outcome](#solution--outcome)
 10. [Conclusion](#conclusion)
-11. [Repository Structure](#repository-structure)
 
 
 # 📦 Olist E-Commerce Performance Analysis  
