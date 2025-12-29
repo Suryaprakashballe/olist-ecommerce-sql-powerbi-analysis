@@ -3,16 +3,17 @@
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ## 📌 Table of Contents
-1. [Problem Statement](#problem-statement)
-2. [Dataset](#dataset)
-3. [Tools & Technologies](#tools--technologies)
-4. [Approach](#approach)
-5. [Business Questions Answered](#business-questions-answered)
-6. [Key Insights](#key-insights)
-7. [Dashboard Preview](#dashboard-preview)
-8. [Business Recommendations](#business-recommendations)
-9. [Solution / Outcome](#solution--outcome)
-10. [Conclusion](#conclusion)
+## Problem Statement
+## Dataset
+## Tools & Technologies
+## Approach
+## Business Questions Answered
+## Key Insights
+## Dashboard Preview
+## Business Recommendations
+## Solution / Outcome
+## Conclusion
+## Repository Structure
 
 
 # 📦 Olist E-Commerce Performance Analysis  
