@@ -14,13 +14,6 @@ Average Order Value (AOV): R$ 204.99
 
 Total Unique Customers: 93,342 (One-time: 90,542 + Repeat: 2,800 — see Customer Behavior section below)
 
-> ⚠️ **Correction:** an earlier version of this README listed "Total Customers" as
-> 96,455 — the same as Total Orders. That number was computed on `customer_id`, which
-> in the Olist schema is generated **per order**, not per person. The true unique
-> customer count uses `customer_unique_id` (as the CLV queries in `sql/03_customer_lifetime_value_analysis.sql`
-> correctly do), giving 93,342 — not 96,455. This is a common gotcha with this dataset
-> and worth knowing cold if asked about it.
-
 These KPIs summarize the overall health and scale of marketplace activity.
 
 📈 Revenue Trend Analysis
