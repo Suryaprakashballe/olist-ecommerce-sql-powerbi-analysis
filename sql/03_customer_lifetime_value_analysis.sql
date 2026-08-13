@@ -31,25 +31,31 @@ GROUP BY customer_type;
 
 
 -- Revenue Contribution by Customer Type
-SELECT
-    customer_type,
-    ROUND(SUM(payment_value), 2) AS total_revenue
-FROM (
+-- FIX: the original version grouped by (customer_unique_id, payment_value).
+-- Any customer with two separate orders that happened to have the exact same
+-- payment_value collapsed into a single row, silently undercounting their revenue.
+-- Rewritten with a window function: order_count is computed per customer WITHOUT
+-- collapsing individual payment rows, so every transaction is summed correctly.
+WITH customer_orders AS (
     SELECT
         c.customer_unique_id,
+        o.order_id,
         p.payment_value,
-        CASE 
-            WHEN COUNT(DISTINCT o.order_id) > 1 THEN 'Repeat Customer'
-            ELSE 'One-time Customer'
-        END AS customer_type
+        COUNT(DISTINCT o.order_id) OVER (PARTITION BY c.customer_unique_id) AS order_count
     FROM orders o
     JOIN customers c
         ON o.customer_id = c.customer_id
     JOIN payments p
         ON o.order_id = p.order_id
     WHERE o.order_status = 'delivered'
-    GROUP BY c.customer_unique_id, p.payment_value
-) t
+)
+SELECT
+    CASE
+        WHEN order_count > 1 THEN 'Repeat Customer'
+        ELSE 'One-time Customer'
+    END AS customer_type,
+    ROUND(SUM(payment_value), 2) AS total_revenue
+FROM customer_orders
 GROUP BY customer_type;
 
 
