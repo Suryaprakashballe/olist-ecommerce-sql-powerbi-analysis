@@ -129,3 +129,10 @@ This analysis demonstrates how **SQL and Power BI** can be used together to extr
 
 A well-structured dashboard can effectively track business health, uncover hidden patterns, and support strategic growth decisions in a competitive e-commerce environment.
 
+---
+
+## 🛠 Project Updates / Fixes
+
+* **Fixed:** `sql/03_customer_lifetime_value_analysis.sql` — the "Revenue Contribution by Customer Type" query grouped by `(customer_unique_id, payment_value)`, which could silently undercount a customer's revenue if two of their orders happened to have the same payment amount. Rewritten using a window function (`COUNT(...) OVER (PARTITION BY ...)`) so every transaction row is preserved and summed correctly.
+* **Fixed:** the Power BI README previously reported "Total Customers" using `customer_id` (which Olist generates per order, not per person), making it identical to the order count. Corrected to use `customer_unique_id`, matching the CLV analysis (93,342 unique customers).
+
